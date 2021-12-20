@@ -13,15 +13,20 @@
             color: $schemeColor;
             font-family: 'Montserrat', sans-serif;
         }
+        .menu{
+            @media (max-width:768px) {
+               display: none;
+            }
+        }
     }
 }
 
 
 
 .menu-list{
-   display: flex;
-   list-style: none;
-   display: flex;
+    display: flex;
+    list-style: none;
+    display: flex;
    .menu-item{
        padding: 0px 22.5px;
        .menu-link{
