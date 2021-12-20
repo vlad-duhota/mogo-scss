@@ -1,0 +1,60 @@
+/* header */
+
+.header{
+    padding-top: 17px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: $textTransform;
+            color: $schemeColor;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+
+
+.menu-list{
+   display: flex;
+   list-style: none;
+   display: flex;
+   .menu-item{
+       padding: 0px 22.5px;
+       .menu-link{
+           display: block;
+           text-decoration: none;
+           text-transform: $textTransform;
+           color: $schemeColor;
+           transition: color 0.3s;
+           font-family: 'Montserrat', sans-serif;
+           &::after{
+               content: '';
+               display: block;
+               width: 100%;
+               height: 3px;
+               margin-top: 10px;
+               background: $secondScemeColor;
+               transform-origin: center;
+               transform: scaleX(0);
+               transition: transform 0.3s;
+           }
+           
+           &:hover,
+           &:focus{
+               color: $secondScemeColor;
+               outline: none;
+           }
+           
+           &:hover::after,
+           &:focus::after{
+               transform: scaleX(1);
+           }
+       }
+   }
+}
+
+
