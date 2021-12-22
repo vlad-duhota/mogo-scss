@@ -88,7 +88,7 @@ section .section-title::after {
   height: 50px;
   position: absolute;
   right: 20px;
-  top: 25px;
+  top: 10px;
   z-index: 3;
   background: transparent;
   border-radius: 50%;
