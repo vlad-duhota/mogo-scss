@@ -2,11 +2,19 @@
 
 .header{
     padding-top: 17px;
-    position: relative;
+    position: fixed;
+    z-index: 6;
+    background: #fff;
+    width: 100%;
+    @media (max-width:768px) {
+        padding-bottom: 15px;
+        border-bottom: 2px solid $schemeColor;
+    }
     .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
+      
         .logo{
             font-weight: 700;
             font-size: 30px;
@@ -34,6 +42,7 @@
         border-radius: 50%;
         padding: 10px;
         border: 2px solid $schemeColor;
+        z-index: 5;
             @media (max-width:768px) {
                 display: block;
             }
@@ -78,14 +87,13 @@
 .menu-list{
     display: flex;
     list-style: none;
-    display: flex;
    .menu-item{
        margin-left: 55px;
        &:first-child{
            margin-left: 0;
-       }
-       @media (max-width:768px) {
-           margin-left: 0;
+        }
+        @media (max-width:768px) {
+            margin-left: 0;
        }
        .menu-link{
            display: block;
@@ -94,6 +102,7 @@
            color: $schemeColor;
            transition: color 0.3s;
            font-family: 'Montserrat', sans-serif;
+           font-size: 14px;
            &::after{
                content: '';
                display: block;
@@ -122,6 +131,7 @@
 
 
 .menu{
+ 
     @media (max-width:768px) {
     position: fixed;
     top:0;
@@ -129,7 +139,7 @@
     width: 100%;
     background: $schemeColor;
     right: -100%;
-    z-index: 2;
+    z-index: 4;
     transition: 0.3s;
     }
 
@@ -144,6 +154,7 @@
         align-content: space-around;
         }
     .menu-link{
+        display: inline-block;
         @media (max-width:768px) {
            font-size: 30px;
            color: #fff;
