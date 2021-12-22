@@ -96,7 +96,7 @@ section .section-title::after {
   border: 2px solid #95E1D3;
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .header .toggle-btn {
     display: block;
   }
@@ -115,14 +115,14 @@ section .section-title::after {
   transition: 0.5s;
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .header .toggle-btn span::before {
     content: '';
     top: -8px;
   }
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .header .toggle-btn span::after {
     content: '';
     top: 8px;
@@ -149,6 +149,12 @@ section .section-title::after {
 
 .menu-list .menu-item:first-child {
   margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-list .menu-item {
+    margin-left: 0;
+  }
 }
 
 .menu-list .menu-item .menu-link {
@@ -188,7 +194,7 @@ section .section-title::after {
           transform: scaleX(1);
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .menu {
     position: fixed;
     top: 0;
@@ -211,7 +217,7 @@ section .section-title::after {
       justify-content: space-around;
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .menu .menu-list {
     height: 100%;
     -webkit-box-orient: vertical;
@@ -226,7 +232,7 @@ section .section-title::after {
   }
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .menu .menu-list .menu-link {
     font-size: 30px;
     color: #fff;
